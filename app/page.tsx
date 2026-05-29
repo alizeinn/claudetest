@@ -93,10 +93,11 @@ export default function Home() {
       <section className="mx-auto mt-32 max-w-3xl">
         <FadeIn className="mb-8 text-center">
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Remotion preview
+            Hero composition, rendered with Remotion
           </h2>
           <p className="mt-3 text-sm text-white/60">
-            Rendered with @remotion/player. Run <code>npm run remotion</code> to open the studio.
+            A 1920×1080 motion-graphics hero — staggered headline, spring CTA, drifting orbs.
+            Run <code>npm run remotion</code> to edit it in the studio.
           </p>
         </FadeIn>
         <RemotionPreview />
