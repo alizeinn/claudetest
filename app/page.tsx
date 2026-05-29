@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FadeIn, HoverCard, StaggerGroup, StaggerItem } from "@/components/MotionPrimitives";
+import { RemotionPreview } from "@/components/RemotionPreview";
 
 const features = [
   {
@@ -87,6 +88,18 @@ export default function Home() {
             </StaggerItem>
           ))}
         </StaggerGroup>
+      </section>
+
+      <section className="mx-auto mt-32 max-w-3xl">
+        <FadeIn className="mb-8 text-center">
+          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+            Remotion preview
+          </h2>
+          <p className="mt-3 text-sm text-white/60">
+            Rendered with @remotion/player. Run <code>npm run remotion</code> to open the studio.
+          </p>
+        </FadeIn>
+        <RemotionPreview />
       </section>
 
       <section className="mx-auto mt-32 h-[60vh] max-w-3xl text-center">
